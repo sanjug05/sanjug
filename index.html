@@ -2,14 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanju G | Growth Infrastructure & Channel Governance Architect</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes">
     
-    <meta property="og:title" content="Sanju G | Growth Infrastructure Architect">
-    <meta property="og:description" content="Architecting the structural backbone for national QSR and Distribution scale.">
+    <!-- SEO Meta Tags -->
+    <title>Sanju Gupta | Growth Infrastructure & Channel Governance Architect | 18+ Years Experience</title>
+    <meta name="description" content="Sanju Gupta - Growth Infrastructure Architect specializing in QSR scaling, channel governance, and distribution networks. 18+ years experience architecting national expansion frameworks.">
+    <meta name="keywords" content="Sanju Gupta, growth infrastructure, channel governance, QSR scaling, distribution networks, business architecture, institutional scaling, franchise development">
+    <meta name="author" content="Sanju Gupta">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    
+    <!-- Open Graph for Social Media -->
+    <meta property="og:title" content="Sanju Gupta | Growth Infrastructure & Channel Governance Architect">
+    <meta property="og:description" content="Architecting the structural backbone for national QSR and Distribution scale. 18+ years of industry mastery.">
     <meta property="og:image" content="SG.logo.v1.png">
-
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta property="og:url" content="https://sanjugupta.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Sanju Gupta">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sanju Gupta | Growth Infrastructure Architect">
+    <meta name="twitter:description" content="Institutionalizing the Future of Scale. Channel Governance & Distribution Expert.">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://sanjugupta.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23d4af37'/%3E%3Ctext x='50' y='67' font-size='48' text-anchor='middle' fill='%230a0a0a' font-family='Arial'%3ESG%3C/text%3E%3C/svg%3E">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <style>
@@ -21,9 +43,19 @@
             --champagne: #f7e7ce;
             --white: #ffffff;
             --border: rgba(212, 175, 55, 0.2);
+            --mobile-menu-bg: rgba(10, 10, 10, 0.98);
         }
 
-        * {margin:0; padding:0; box-sizing:border-box; scroll-behavior:smooth;}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
         
         body {
             font-family: 'Inter', sans-serif;
@@ -33,172 +65,689 @@
             overflow-x: hidden;
         }
 
-        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+        h1, h2, h3, h4 { 
+            font-family: 'Playfair Display', serif; 
+        }
 
         /* HEADER */
         header {
-            position: fixed; width: 100%; padding: 15px 8%;
-            display: flex; justify-content: space-between; align-items: center;
-            background: rgba(10, 10, 10, 0.9); backdrop-filter: blur(15px);
-            border-bottom: 1px solid var(--border); z-index: 1000;
+            position: fixed; 
+            width: 100%; 
+            padding: 15px 6%;
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            background: rgba(10, 10, 10, 0.95); 
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid var(--border); 
+            z-index: 1000;
+            transition: 0.3s;
         }
-        .logo-container { display: flex; align-items: center; gap: 15px; }
-        .logo-container img { height: 45px; width: auto; }
+        
+        .logo-container { 
+            display: flex; 
+            align-items: center; 
+            gap: 12px; 
+            z-index: 1001;
+        }
+        
+        .logo-container img { 
+            height: 45px; 
+            width: auto; 
+            object-fit: contain;
+        }
+        
+        .logo-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--gold);
+            letter-spacing: 1px;
+        }
+        
+        @media (max-width: 480px) {
+            .logo-text {
+                font-size: 1rem;
+            }
+            .logo-container img {
+                height: 35px;
+            }
+        }
 
-        nav a {
-            color: var(--white); text-decoration: none; margin-left: 35px;
-            font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase; 
-            transition: 0.3s; opacity: 0.7; font-weight: 600;
+        /* DESKTOP NAVIGATION */
+        .desktop-nav {
+            display: flex;
+            gap: 35px;
+            align-items: center;
         }
-        nav a:hover { color: var(--gold); opacity: 1; }
+
+        .desktop-nav a {
+            color: var(--white); 
+            text-decoration: none; 
+            font-size: 0.7rem; 
+            letter-spacing: 2px; 
+            text-transform: uppercase; 
+            transition: 0.3s; 
+            opacity: 0.7; 
+            font-weight: 600;
+            cursor: pointer;
+            position: relative;
+        }
+        
+        .desktop-nav a:hover { 
+            color: var(--gold); 
+            opacity: 1; 
+        }
+        
+        .desktop-nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--gold);
+            transition: width 0.3s ease;
+        }
+        
+        .desktop-nav a:hover::after {
+            width: 100%;
+        }
+
+        /* MOBILE MENU BUTTON */
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 22px;
+            cursor: pointer;
+            z-index: 1001;
+            background: transparent;
+            border: none;
+        }
+        
+        .mobile-menu-btn span {
+            width: 100%;
+            height: 2px;
+            background: var(--gold);
+            transition: 0.3s;
+            border-radius: 2px;
+        }
+        
+        .mobile-menu-btn.active span:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 7px);
+        }
+        
+        .mobile-menu-btn.active span:nth-child(2) {
+            opacity: 0;
+        }
+        
+        .mobile-menu-btn.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -7px);
+        }
+        
+        /* MOBILE NAVIGATION */
+        .mobile-nav {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 70%;
+            max-width: 300px;
+            height: 100vh;
+            background: var(--mobile-menu-bg);
+            backdrop-filter: blur(20px);
+            z-index: 999;
+            padding: 100px 30px 40px;
+            transition: right 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            border-left: 1px solid var(--border);
+        }
+        
+        .mobile-nav.active {
+            right: 0;
+        }
+        
+        .mobile-nav a {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 1rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 500;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border);
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        
+        .mobile-nav a:hover {
+            color: var(--gold);
+            padding-left: 10px;
+        }
 
         /* HERO */
         .hero {
-            min-height: 95vh; display: flex; flex-direction: column; justify-content: center; padding: 0 10%;
-            background: linear-gradient(rgba(10,10,10,0.7), rgba(10,10,10,0.7)), 
+            min-height: 100vh; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            padding: 80px 6% 60px;
+            background: linear-gradient(rgba(10,10,10,0.8), rgba(10,10,10,0.8)), 
                         url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80');
-            background-size: cover; background-position: center; background-attachment: fixed;
+            background-size: cover; 
+            background-position: center;
         }
+        
         .hero span.label { 
-            color: var(--gold); text-transform: uppercase; letter-spacing: 5px; 
-            font-size: 0.8rem; font-weight: 700; margin-bottom: 20px; display: block;
+            color: var(--gold); 
+            text-transform: uppercase; 
+            letter-spacing: 5px; 
+            font-size: 0.75rem; 
+            font-weight: 700; 
+            margin-bottom: 20px; 
+            display: block; 
         }
-        .hero h1 { font-size: clamp(2.2rem, 6vw, 4.5rem); color: var(--white); margin-bottom: 25px; line-height: 1.1; }
-        .hero h1 span { color: var(--gold); }
+        
+        .hero h1 { 
+            font-size: clamp(2rem, 6vw, 4rem); 
+            color: var(--white); 
+            margin-bottom: 20px; 
+            line-height: 1.2; 
+        }
+        
+        .hero h1 span { 
+            color: var(--gold); 
+        }
+        
         .hero p { 
-            font-size: clamp(1rem, 2vw, 1.2rem); max-width: 750px; color: rgba(255,255,255,0.8); 
-            margin-bottom: 40px; border-left: 3px solid var(--gold); padding-left: 30px; 
+            font-size: clamp(1rem, 1.8vw, 1.2rem); 
+            max-width: 650px; 
+            color: rgba(255,255,255,0.85); 
+            margin-bottom: 35px; 
+            border-left: 3px solid var(--gold); 
+            padding-left: 25px; 
+        }
+
+        /* BUTTON STYLES */
+        .btn-gold {
+            display: inline-block; 
+            padding: 16px 38px; 
+            background: var(--gold);
+            color: black; 
+            font-weight: 700; 
+            text-decoration: none; 
+            text-transform: uppercase;
+            letter-spacing: 2px; 
+            font-size: 0.75rem; 
+            cursor: pointer; 
+            border: none; 
+            transition: 0.3s;
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .btn-gold:hover { 
+            background: var(--white); 
+            transform: translateY(-2px); 
         }
 
         /* AUTHORITY STRIP */
         .authority-strip {
-            background: #050505; padding: 30px 10%; border-bottom: 1px solid var(--border);
-            display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;
+            background: #050505; 
+            padding: 25px 6%; 
+            border-bottom: 1px solid var(--border);
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            flex-wrap: wrap; 
+            gap: 15px;
         }
-        .authority-strip span { font-size: 0.7rem; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); font-weight: 700; }
-        .brand-item { font-weight: 700; color: white; opacity: 0.6; font-size: 0.9rem; }
+        
+        .authority-strip span { 
+            font-size: 0.65rem; 
+            letter-spacing: 3px; 
+            text-transform: uppercase; 
+            color: var(--gold); 
+            font-weight: 700; 
+        }
+        
+        .brand-item { 
+            font-weight: 600; 
+            color: white; 
+            opacity: 0.7; 
+            font-size: 0.85rem; 
+        }
 
         /* SECTIONS */
-        section { padding: 100px 10%; }
-        .section-label { color: var(--gold); text-transform: uppercase; letter-spacing: 4px; font-size: 0.7rem; font-weight: 700; margin-bottom: 20px; display: block; }
-        h2.section-title { font-size: clamp(2rem, 5vw, 3rem); color: var(--white); margin-bottom: 50px; }
+        section { 
+            padding: 80px 6%; 
+        }
+        
+        .section-label { 
+            color: var(--gold); 
+            text-transform: uppercase; 
+            letter-spacing: 4px; 
+            font-size: 0.7rem; 
+            font-weight: 700; 
+            margin-bottom: 15px; 
+            display: block; 
+        }
+        
+        h2.section-title { 
+            font-size: clamp(1.8rem, 4vw, 2.8rem); 
+            color: var(--white); 
+            margin-bottom: 40px; 
+        }
 
         /* ABOUT GRID */
-        .about-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; align-items: center; }
-        .about-image { border: 1px solid var(--gold); padding: 15px; background: var(--surface); position: relative; }
-        .about-image img { width: 100%; filter: grayscale(0.2); display: block; }
+        .about-grid { 
+            display: grid; 
+            grid-template-columns: 1fr 1.2fr; 
+            gap: 50px; 
+            align-items: center; 
+        }
+        
+        .about-image { 
+            border: 1px solid var(--gold); 
+            padding: 12px; 
+            background: var(--surface); 
+            position: relative; 
+        }
+        
+        .about-image img { 
+            width: 100%; 
+            filter: grayscale(0.2); 
+            display: block; 
+        }
 
-        /* TRACK RECORD (4 CARDS) */
-        .track-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        /* TRACK RECORD */
+        .track-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); 
+            gap: 24px; 
+        }
+        
         .track-card { 
-            background: var(--surface); padding: 45px; border: 1px solid var(--border); 
-            transition: 0.4s; position: relative;
+            background: var(--surface); 
+            padding: 35px; 
+            border: 1px solid var(--border); 
+            transition: 0.4s; 
+            position: relative;
+            cursor: pointer;
         }
-        .track-card::before { content: ""; position: absolute; top: 0; left: 0; width: 4px; height: 0%; background: var(--gold); transition: 0.4s; }
-        .track-card:hover::before { height: 100%; }
-        .track-card:hover { transform: translateY(-10px); background: #1a1a1a; }
-        .track-card h3 { color: var(--gold); margin-bottom: 15px; font-size: 1.5rem; }
+        
+        .track-card::before { 
+            content: ""; 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 3px; 
+            height: 0%; 
+            background: var(--gold); 
+            transition: 0.4s; 
+        }
+        
+        .track-card:hover::before { 
+            height: 100%; 
+        }
+        
+        .track-card:hover { 
+            transform: translateY(-5px); 
+            background: #1a1a1a; 
+        }
+        
+        .track-card h3 { 
+            color: var(--gold); 
+            margin-bottom: 12px; 
+            font-size: 1.3rem; 
+        }
+        
+        .track-card p {
+            font-size: 0.85rem;
+            opacity: 0.8;
+        }
 
-        /* GOVERNANCE FRAMEWORK (4 PILLARS) */
-        .framework-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1px; background: var(--border); margin-top: 50px; border: 1px solid var(--border); }
-        .pillar-box { background: var(--charcoal); padding: 40px; transition: 0.3s; }
-        .pillar-box:hover { background: var(--surface); }
-        .pillar-num { font-size: 3rem; color: rgba(212, 175, 55, 0.1); font-family: 'Playfair Display'; font-weight: 900; display: block; }
-        .pillar-box h4 { color: var(--gold); margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px; }
+        /* GOVERNANCE FRAMEWORK */
+        .framework-container { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+            gap: 1px; 
+            background: var(--border); 
+            margin-top: 40px; 
+            border: 1px solid var(--border); 
+        }
+        
+        .pillar-box { 
+            background: var(--charcoal); 
+            padding: 35px; 
+            transition: 0.3s; 
+            cursor: pointer;
+        }
+        
+        .pillar-box:hover { 
+            background: var(--surface); 
+        }
+        
+        .pillar-num { 
+            font-size: 2.5rem; 
+            color: rgba(212, 175, 55, 0.15); 
+            font-family: 'Playfair Display'; 
+            font-weight: 900; 
+            display: block; 
+        }
+        
+        .pillar-box h4 { 
+            color: var(--gold); 
+            margin-bottom: 12px; 
+            text-transform: uppercase; 
+            letter-spacing: 1px; 
+            font-size: 1.1rem;
+        }
+        
+        .pillar-box p {
+            font-size: 0.8rem;
+            opacity: 0.7;
+        }
 
-        /* LEAD CAPTURE FORM */
+        /* CONTACT FORM */
         .contact-card { 
-            max-width: 900px; margin: 0 auto; background: var(--surface); 
-            border: 1px solid var(--gold); padding: 60px; text-align: left;
+            max-width: 850px; 
+            margin: 0 auto; 
+            background: var(--surface); 
+            border: 1px solid var(--gold); 
+            padding: 50px; 
+            text-align: left;
         }
-        .form-group { margin-bottom: 30px; }
-        .form-group label { display: block; font-size: 0.7rem; color: var(--gold); letter-spacing: 2px; margin-bottom: 12px; font-weight: 700; }
-        .form-group input, .form-group select { 
-            width: 100%; padding: 18px; background: transparent; border: 1px solid var(--border); 
-            color: white; border-radius: 0; outline: none; font-family: 'Inter'; font-size: 0.9rem;
+        
+        .form-group { 
+            margin-bottom: 25px; 
         }
-        .form-group input:focus { border-color: var(--gold); }
+        
+        .form-group label { 
+            display: block; 
+            font-size: 0.7rem; 
+            color: var(--gold); 
+            letter-spacing: 2px; 
+            margin-bottom: 10px; 
+            font-weight: 700; 
+        }
+        
+        .form-group input, 
+        .form-group select { 
+            width: 100%; 
+            padding: 16px; 
+            background: transparent; 
+            border: 1px solid var(--border); 
+            color: white; 
+            border-radius: 0; 
+            outline: none; 
+            font-family: 'Inter'; 
+            font-size: 0.9rem;
+        }
+        
+        .form-group input:focus, 
+        .form-group select:focus { 
+            border-color: var(--gold); 
+        }
 
-        .btn-gold {
-            display: inline-block; padding: 22px 50px; background: var(--gold);
-            color: black; font-weight: 800; text-decoration: none; text-transform: uppercase;
-            letter-spacing: 2px; font-size: 0.85rem; cursor: pointer; border: none; transition: 0.3s;
-            width: 100%; text-align: center;
-        }
-        .btn-gold:hover { background: var(--white); transform: scale(1.01); }
-
-        /* FLOATING WHATSAPP & MODAL */
+        /* FLOATING WHATSAPP */
         .wa-float {
-            position: fixed; bottom: 30px; right: 30px; background: #25D366; 
-            width: 60px; height: 60px; border-radius: 50%; display: flex; 
-            align-items: center; justify-content: center; z-index: 2000;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.3); cursor: pointer; transition: 0.3s;
+            position: fixed; 
+            bottom: 25px; 
+            right: 25px; 
+            background: #25D366; 
+            width: 55px; 
+            height: 55px; 
+            border-radius: 50%; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            z-index: 2000;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3); 
+            cursor: pointer; 
+            transition: 0.3s;
         }
-        .wa-float:hover { transform: scale(1.1); }
-        .wa-float svg { width: 32px; height: 32px; fill: white; }
+        
+        .wa-float:hover { 
+            transform: scale(1.08); 
+        }
+        
+        .wa-float svg { 
+            width: 28px; 
+            height: 28px; 
+            fill: white; 
+        }
 
         .wa-popup {
-            position: fixed; bottom: 100px; right: 30px; width: 320px;
-            background: var(--surface); border: 1px solid var(--gold);
-            padding: 30px; display: none; z-index: 2000; box-shadow: 0 20px 50px rgba(0,0,0,0.5);
-            backdrop-filter: blur(10px);
+            position: fixed; 
+            bottom: 95px; 
+            right: 25px; 
+            width: 300px;
+            background: var(--surface); 
+            border: 1px solid var(--gold);
+            padding: 20px; 
+            display: none; 
+            z-index: 2000; 
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            border-radius: 12px;
         }
-        .wa-popup h4 { color: var(--gold); margin-bottom: 20px; font-size: 1rem; text-transform: uppercase; }
-        .wa-popup input, .wa-popup textarea {
-            width: 100%; padding: 12px; background: #000; border: 1px solid var(--border);
-            color: white; margin-bottom: 15px; font-family: 'Inter'; outline: none;
+        
+        .wa-popup h4 { 
+            color: var(--gold); 
+            margin-bottom: 15px; 
+            font-size: 1rem; 
+            text-transform: uppercase; 
+            letter-spacing: 1px;
+        }
+        
+        .wa-popup input, 
+        .wa-popup textarea {
+            width: 100%; 
+            padding: 10px 12px; 
+            background: #1a1a1a; 
+            border: 1px solid var(--border);
+            color: white; 
+            margin-bottom: 12px; 
+            font-family: 'Inter'; 
+            outline: none;
+            border-radius: 6px;
+            font-size: 0.85rem;
+        }
+        
+        .wa-popup input:focus, 
+        .wa-popup textarea:focus {
+            border-color: var(--gold);
+        }
+        
+        .wa-popup .btn-gold {
+            width: 100%;
+            padding: 12px;
+            font-size: 0.7rem;
         }
 
-        footer { background: #050505; padding: 80px 10% 40px; border-top: 1px solid var(--border); text-align: center; }
+        /* FOOTER */
+        footer { 
+            background: #050505; 
+            padding: 60px 6% 30px; 
+            border-top: 1px solid var(--border); 
+            text-align: center; 
+        }
+        
+        footer a { 
+            transition: 0.3s; 
+            text-decoration: none;
+        }
+        
+        footer a:hover { 
+            opacity: 0.7; 
+        }
 
-        /* ✅ MOBILE OPTIMIZATION TRICKS (ADDITIONS) */
+        /* MOBILE RESPONSIVE */
         @media (max-width: 768px) { 
-            header { padding: 15px 5%; }
-            nav { display: none; } /* Prevents overlapping on small screens */
-            .logo-container img { height: 35px; }
-
-            section { padding: 60px 6%; }
-            .hero { padding: 0 6%; background-attachment: scroll; } /* Fixes laggy mobile scrolling */
-            .hero h1 { margin-top: 40px; }
-            .hero p { border-left: 2px solid var(--gold); padding-left: 15px; }
-
-            .about-grid { grid-template-columns: 1fr; gap: 40px; }
-            .about-image { order: -1; max-width: 300px; margin: 0 auto; padding: 8px; }
+            .desktop-nav {
+                display: none;
+            }
             
-            .authority-strip { justify-content: center; text-align: center; padding: 25px 5%; }
-            .authority-strip span { width: 100%; margin-bottom: 10px; }
+            .mobile-menu-btn {
+                display: flex;
+            }
             
-            .track-card { padding: 30px 20px; }
-            .pillar-box { padding: 30px 20px; }
+            header {
+                padding: 12px 5%;
+            }
             
-            .contact-card { padding: 35px 20px; }
-            .wa-popup { width: 290px; right: 15px; bottom: 90px; }
+            section {
+                padding: 60px 5%;
+            }
             
-            /* Trick: Increase touch target for inputs */
-            .form-group input, .form-group select { font-size: 16px !important; } 
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+            
+            .about-image {
+                max-width: 280px;
+                margin: 0 auto;
+            }
+            
+            .authority-strip {
+                justify-content: center;
+                text-align: center;
+                padding: 20px 5%;
+            }
+            
+            .authority-strip span {
+                width: 100%;
+                margin-bottom: 8px;
+            }
+            
+            .brand-item {
+                font-size: 0.75rem;
+            }
+            
+            .track-card {
+                padding: 25px 20px;
+            }
+            
+            .pillar-box {
+                padding: 25px 20px;
+            }
+            
+            .contact-card {
+                padding: 30px 20px;
+            }
+            
+            .hero {
+                padding: 100px 5% 60px;
+                min-height: 90vh;
+            }
+            
+            .hero p {
+                padding-left: 18px;
+            }
+            
+            .btn-gold {
+                padding: 14px 28px;
+                font-size: 0.7rem;
+                width: 100%;
+                text-align: center;
+            }
+            
+            .form-group input, 
+            .form-group select {
+                font-size: 16px !important;
+                padding: 14px;
+            }
+            
+            .wa-popup {
+                width: 280px;
+                right: 15px;
+                bottom: 85px;
+            }
+            
+            .wa-float {
+                width: 48px;
+                height: 48px;
+                bottom: 20px;
+                right: 20px;
+            }
+            
+            .wa-float svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h2.section-title {
+                margin-bottom: 30px;
+            }
+            
+            .track-card h3 {
+                font-size: 1.2rem;
+            }
+            
+            .pillar-box h4 {
+                font-size: 1rem;
+            }
+        }
+        
+        /* Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-up {
+            animation: fadeInUp 0.8s ease forwards;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <div class="logo-container">
-        <img src="SG.logo.v1.png" alt="Sanju G Logo">
+<div class="logo-container">
+    <img src="SG.logo.v1.png" alt="Sanju Gupta Logo" style="height: 45px; width: auto; object-fit: contain;">
+</div>
+    <!-- Desktop Navigation -->
+    <div class="desktop-nav">
+        <a data-section="about">The Architect</a>
+        <a data-section="track-record">Execution</a>
+        <a data-section="framework">Governance</a>
+        <a data-section="contact">Consultation</a>
     </div>
-    <nav>
-        <a href="#about">The Architect</a>
-        <a href="#track-record">Execution</a>
-        <a href="#framework">Governance</a>
-        <a href="#contact">Consultation</a>
-    </nav>
+    
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <a data-section="about">The Architect</a>
+        <a data-section="track-record">Execution</a>
+        <a data-section="framework">Governance</a>
+        <a data-section="contact">Consultation</a>
+    </div>
 </header>
 
 <div class="hero">
     <span class="label" data-aos="fade-right">Growth Infrastructure Architect</span>
     <h1 data-aos="fade-up">Institutionalizing the <br><span>Future of Scale.</span></h1>
     <p data-aos="fade-up" data-aos-delay="200">Architecting high-yield structural backbones for national expansion—specializing in chef-independent QSR models and deep distribution governance.</p>
-    <div style="margin-top: 30px;" data-aos="fade-up" data-aos-delay="400">
-        <a href="#contact" class="btn-gold" style="width: auto;">Initiate Executive Briefing</a>
+    <div data-aos="fade-up" data-aos-delay="400">
+        <a class="btn-gold" style="display: inline-block; cursor: pointer;" data-section="contact">Initiate Executive Briefing</a>
     </div>
 </div>
 
@@ -212,23 +761,23 @@
 
 <section id="about">
     <div class="about-grid">
-        <div class="about-image" data-aos="fade-right">
-            <img src="https://media.licdn.com/dms/image/v2/D5603AQEycJri2Z7mcQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1713161681592?e=1773878400&v=beta&t=RNktpVUuv4H8TyRQaUAuUhKk8TYC-qc5L-e4IuS2FDo" alt="Sanju G">
-        </div>
+<div class="about-image" data-aos="fade-right">
+    <img src="self.JPEG" alt="Sanju Gupta - Growth Infrastructure Architect" style="width: 100%; display: block;">
+</div>
         <div data-aos="fade-left">
             <span class="section-label">Institutional Philosophy</span>
-            <h2 class="section-title" style="margin-bottom: 30px;">Architecture Over <br>Aspiration.</h2>
-            <p style="margin-bottom: 25px; opacity: 0.8; font-size: 1.1rem;">With 18+ years of industry mastery, I move organizations from "Chaos" to "Scale." My focus is not just growth, but Channel Governance—creating systems where performance is a standard, not an accident.</p>
-            <p style="opacity: 0.6; margin-bottom: 40px;">From architecting 100+ partner channels to designing ₹25L+ investment frameworks, I provide the structural blueprint for national dominance.</p>
+            <h2 class="section-title" style="margin-bottom: 25px;">Architecture Over <br>Aspiration.</h2>
+            <p style="margin-bottom: 20px; opacity: 0.85; font-size: 1.05rem;">With 18+ years of industry mastery, I move organizations from "Chaos" to "Scale." My focus is not just growth, but Channel Governance—creating systems where performance is a standard, not an accident.</p>
+            <p style="opacity: 0.65; margin-bottom: 35px;">From architecting 100+ partner channels to designing ₹25L+ investment frameworks, I provide the structural blueprint for national dominance.</p>
             
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; border-top: 1px solid var(--border); padding-top: 30px;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px; border-top: 1px solid var(--border); padding-top: 25px;">
                 <div>
-                    <h4 style="color: var(--gold); font-size: 1.2rem;">Diagnostic</h4>
-                    <p style="font-size: 0.8rem; opacity: 0.5;">Audit of infrastructure leaks & unit economics.</p>
+                    <h4 style="color: var(--gold); font-size: 1.1rem;">Diagnostic</h4>
+                    <p style="font-size: 0.75rem; opacity: 0.6;">Audit of infrastructure leaks & unit economics.</p>
                 </div>
                 <div>
-                    <h4 style="color: var(--gold); font-size: 1.2rem;">Accountability</h4>
-                    <p style="font-size: 0.8rem; opacity: 0.5;">Implementation of digital review rhythms.</p>
+                    <h4 style="color: var(--gold); font-size: 1.1rem;">Accountability</h4>
+                    <p style="font-size: 0.75rem; opacity: 0.6;">Implementation of digital review rhythms.</p>
                 </div>
             </div>
         </div>
@@ -265,22 +814,22 @@
         <div class="pillar-box" data-aos="fade-up">
             <span class="pillar-num">01</span>
             <h4>Diagnostic</h4>
-            <p style="font-size: 0.85rem; opacity: 0.7;">Deep audit of current operations to identify scaling bottlenecks and leaks.</p>
+            <p>Deep audit of current operations to identify scaling bottlenecks and leaks.</p>
         </div>
         <div class="pillar-box" data-aos="fade-up" data-aos-delay="100">
             <span class="pillar-num">02</span>
             <h4>Architecture</h4>
-            <p style="font-size: 0.85rem; opacity: 0.7;">Designing chef-independent SOPs and distribution governance blueprints.</p>
+            <p>Designing chef-independent SOPs and distribution governance blueprints.</p>
         </div>
         <div class="pillar-box" data-aos="fade-up" data-aos-delay="200">
             <span class="pillar-num">03</span>
             <h4>Accountability</h4>
-            <p style="font-size: 0.85rem; opacity: 0.7;">Deploying digital audit manuals and standardized review rhythms.</p>
+            <p>Deploying digital audit manuals and standardized review rhythms.</p>
         </div>
         <div class="pillar-box" data-aos="fade-up" data-aos-delay="300">
             <span class="pillar-num">04</span>
             <h4>Scaling</h4>
-            <p style="font-size: 0.85rem; opacity: 0.7;">Executing high-velocity national rollouts through systemized infrastructure.</p>
+            <p>Executing high-velocity national rollouts through systemized infrastructure.</p>
         </div>
     </div>
 </section>
@@ -308,18 +857,21 @@
                     <option value="Unit Economics Optimization">Unit Economics Optimization</option>
                 </select>
             </div>
-            <button type="submit" class="btn-gold">Capture Details & Open WhatsApp</button>
+            <button type="submit" class="btn-gold" style="width: 100%;">Capture Details & Open WhatsApp</button>
         </form>
     </div>
 </section>
 
 <footer>
-    <img src="SG.logo.v1.png" style="height: 40px; margin-bottom: 20px;" alt="Sanju G">
+<footer>
     <div style="margin-bottom: 25px;">
-        <a href="mailto:contact@sanjugupta.com" style="color: var(--gold); text-decoration: none; margin: 0 15px;">contact@sanjugupta.com</a>
-        <a href="https://www.linkedin.com/in/sanjugupta01" target="_blank" style="color: var(--gold); text-decoration: none; margin: 0 15px;">LinkedIn</a>
+        <img src="SG.logo.v1.png" alt="Sanju Gupta Logo" style="height: 50px; width: auto; object-fit: contain;">
     </div>
-    <p style="opacity: 0.3; font-size: 0.7rem; letter-spacing: 2px;">© 2026 SANJU GUPTA | ARCHITECTING THE FUTURE OF CHANNEL GOVERNANCE</p>
+    <div style="margin-bottom: 20px;">
+        <a href="mailto:contact@sanjugupta.com" style="color: var(--gold); text-decoration: none; margin: 0 12px; font-size: 0.8rem;">contact@sanjugupta.com</a>
+        <a href="https://www.linkedin.com/in/sanjugupta01" target="_blank" rel="noopener noreferrer" style="color: var(--gold); text-decoration: none; margin: 0 12px; font-size: 0.8rem;">LinkedIn</a>
+    </div>
+    <p style="opacity: 0.4; font-size: 0.65rem; letter-spacing: 1px;">© 2026 SANJU GUPTA | ARCHITECTING THE FUTURE OF CHANNEL GOVERNANCE</p>
 </footer>
 
 <div class="wa-float" onclick="toggleWAPopup()">
@@ -336,34 +888,145 @@
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
-    AOS.init({ duration: 1000, once: true });
-
+    // Initialize AOS
+    AOS.init({ 
+        duration: 800, 
+        once: true,
+        offset: 80,
+        disable: window.innerWidth < 768 ? true : false // Disable on mobile for performance
+    });
+    
+    // Scroll to section function with offset for fixed header
+    function scrollToSection(sectionId) {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            const headerHeight = 70;
+            const elementPosition = element.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
+            
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+            
+            // Close mobile menu if open
+            const mobileNav = document.getElementById('mobileNav');
+            const mobileBtn = document.getElementById('mobileMenuBtn');
+            if (mobileNav.classList.contains('active')) {
+                mobileNav.classList.remove('active');
+                mobileBtn.classList.remove('active');
+            }
+        }
+    }
+    
+    // Add click handlers to all navigation links
+    document.querySelectorAll('[data-section]').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const sectionId = this.getAttribute('data-section');
+            scrollToSection(sectionId);
+        });
+    });
+    
+    // Mobile menu toggle
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    
+    if (mobileBtn) {
+        mobileBtn.addEventListener('click', function() {
+            this.classList.toggle('active');
+            mobileNav.classList.toggle('active');
+            document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+        });
+    }
+    
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(event) {
+        if (mobileNav && mobileNav.classList.contains('active')) {
+            if (!mobileNav.contains(event.target) && !mobileBtn.contains(event.target)) {
+                mobileNav.classList.remove('active');
+                mobileBtn.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        }
+    });
+    
+    // Toggle WhatsApp Popup
     function toggleWAPopup() {
         const popup = document.getElementById('waPopup');
-        popup.style.display = (popup.style.display === 'block') ? 'none' : 'block';
+        if (popup.style.display === 'block') {
+            popup.style.display = 'none';
+        } else {
+            popup.style.display = 'block';
+        }
     }
-
+    
+    // Close popup when clicking outside
+    document.addEventListener('click', function(event) {
+        const popup = document.getElementById('waPopup');
+        const waFloat = document.querySelector('.wa-float');
+        if (popup && popup.style.display === 'block' && 
+            !popup.contains(event.target) && 
+            !waFloat.contains(event.target)) {
+            popup.style.display = 'none';
+        }
+    });
+    
+    // Send WhatsApp message from popup
     function sendWhatsAppConcierge() {
-        const name = document.getElementById('waName').value;
-        const loc = document.getElementById('waLoc').value;
-        const purpose = document.getElementById('waPurpose').value;
+        const name = document.getElementById('waName').value.trim();
+        const loc = document.getElementById('waLoc').value.trim();
+        const purpose = document.getElementById('waPurpose').value.trim();
         
-        if(!name || !loc) { alert("Please provide your name and location."); return; }
+        if(!name) { 
+            alert("Please provide your name."); 
+            return; 
+        }
+        if(!loc) { 
+            alert("Please provide your location."); 
+            return; 
+        }
 
-        const message = `*Direct Connection Request*%0A%0A*Name:* ${name}%0A*Location:* ${loc}%0A*Purpose:* ${purpose}%0A%0AHello Sanju G, reaching out to you from your website.`;
+        const message = `*Direct Connection Request*%0A%0A*Name:* ${name}%0A*Location:* ${loc}%0A*Purpose:* ${purpose || "Not specified"}%0A%0AHello Sanju G, reaching out to you from your website.`;
         window.open(`https://wa.me/919599949991?text=${message}`, '_blank');
         toggleWAPopup();
+        
+        // Clear fields
+        document.getElementById('waName').value = '';
+        document.getElementById('waLoc').value = '';
+        document.getElementById('waPurpose').value = '';
     }
-
+    
+    // Submit main form to WhatsApp
     function submitToWhatsAppMain(event) {
         event.preventDefault();
-        const name = document.getElementById('name').value;
-        const company = document.getElementById('company').value;
+        
+        const name = document.getElementById('name').value.trim();
+        const company = document.getElementById('company').value.trim();
         const goal = document.getElementById('goal').value;
+        
+        if(!name) { alert("Please enter your full name."); return; }
+        if(!company) { alert("Please enter your company/industry."); return; }
+        if(!goal) { alert("Please select your primary goal."); return; }
+        
         const message = `*Executive Briefing Request*%0A%0A*Name:* ${name}%0A*Company:* ${company}%0A*Goal:* ${goal}%0A%0AHello Sanju G, I would like to discuss structural growth and governance systems.`;
         window.open(`https://wa.me/919599949991?text=${message}`, '_blank');
     }
+    
+    // Add touch optimization for mobile
+    if ('ontouchstart' in window) {
+        document.querySelectorAll('.track-card, .pillar-box, .btn-gold, .wa-float').forEach(el => {
+            el.style.cursor = 'pointer';
+        });
+    }
+    
+    // Lazy load images for performance
+    const images = document.querySelectorAll('img');
+    if ('loading' in HTMLImageElement.prototype) {
+        images.forEach(img => {
+            img.loading = 'lazy';
+        });
+    }
 </script>
-
 </body>
 </html>
