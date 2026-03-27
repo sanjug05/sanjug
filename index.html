@@ -45,7 +45,11 @@
             --border: rgba(212, 175, 55, 0.2);
             --mobile-menu-bg: rgba(10, 10, 10, 0.98);
         }
-
+@media (max-width: 768px) {
+    .about-image img {
+        max-width: 200px !important;
+    }
+}
         * {
             margin: 0;
             padding: 0;
@@ -716,7 +720,7 @@
 
 <header>
 <div class="logo-container">
-    <img src="SG.logo.v1.png" alt="Sanju Gupta Logo" style="height: 45px; width: auto; object-fit: contain;">
+    <img src="SG.logo.v1.png" alt="Sanju Gupta Logo" style="height: 85px; width: auto; object-fit: contain;">
 </div>
     <!-- Desktop Navigation -->
     <div class="desktop-nav">
@@ -762,7 +766,7 @@
 <section id="about">
     <div class="about-grid">
 <div class="about-image" data-aos="fade-right">
-    <img src="self.jpeg" alt=" style="width: 100%; display: block;">
+    <img src="self.JPEG" alt="Sanju Gupta - Growth Infrastructure Architect" style="width: 100%; max-width: 280px; display: block; margin: 0 auto;">
 </div>
         <div data-aos="fade-left">
             <span class="section-label">Institutional Philosophy</span>
